@@ -1,0 +1,93 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #1c1c1c;
+}
+
+html,body{
+    overscroll-behavior: none;
+}
+
+h3{
+    font-size: 20px;
+    color: greenyellow;
+}
+
+h3:before{
+    content:"video";
+    background: black;
+    font-size: 12px;
+    color: white;
+    font-weight: 600;
+}
+
+#video{
+    -webkit-box-shadow: 2px 2px 25px 2px grey; 
+    box-shadow: 2px 2px 25px 2px grey;
+    padding: 8px;
+    background-image: url(bulldawg.png), url(bulldawg2.png);
+    background-blend-mode:darken;
+    background-color: #1c1c1c;
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat-y;
+}
+
+.container{
+    height: 5000px;
+    width: 1000px;
+}
+
+.child{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn-pauseplay, .btn-stop,.btn-sticky{
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 15px;
+    border: none; 
+    margin: 2px;
+    color: greenyellow;
+    background: black;
+    border-radius: 4px;
+    transition: ease-out 0.1s;
+    outline: none;
+}
+
+.btn-pauseplay:hover, .btn-stop:hover, .btn-sticky:hover{
+    background: black;
+    color: white;
+}
+
+.sticky{
+    position: fixed;
+    left: 60%;
+    top: 40%;
+}
+
+@media screen and (max-width: 1100px) {
+    .sticky{
+        position: relative;
+        left: 0%;
+        top: 0%;
+    }
+}

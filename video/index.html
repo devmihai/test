@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Video</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>  
+<body>
+
+   <!--container-->
+ <div class="container">
+    <h3 class="maincounter">Counter: <span id="vcounter">0</span></h3>
+    <div class="child">
+ <!--video --->       
+   <video id="video" width="420" height="315" autoplay muted>
+   <source src="dog.mp4" type="video/mp4"></source>
+   </video>
+<!---buttons--------->
+     <div class="btns">
+<button class="btn-pauseplay" onclick="playPause()"> Pause </button>
+<button class="btn-stop" onclick="stop()"> Stop </button>
+<button class="btn-sticky"> Sticky </button>
+</div>
+</div>
+<!---container's end-->
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+<script src="index.js"></script>
+</body>  
+</html>
